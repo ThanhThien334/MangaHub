@@ -30,3 +30,9 @@
 **Việc B cần làm đầu tiên:**
 - Chạy đúng các lệnh ở trên.
 - Làm phần B của 01-foundation.md: TUI cơ bản với tview, helper ui.Do, APIClient.Health().
+
+**.env Note**
+- File .env.example chỉ để tham khảo, chương trình ko đọc file .env, nên sửa trong đó ko có tác dụng (bình thường không cần đổi gì vì mọi cấu hình đã có giá trị mặc định)
+- Nếu muốn đổi (ví dụ cổng 8080 bị chiếm), đặt biến trong PowerShell trước khi chạy:
+      $env:HTTP_ADDR=":8081"
+      go run ./cmd/api
